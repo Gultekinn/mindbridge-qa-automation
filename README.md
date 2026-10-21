@@ -1,6 +1,13 @@
-# MindBridge — QA Automation and Release Reporting
+# MindBridge QA Automation | Playwright, SQL and Test Reporting
 
-Account-update automation, SQLite data validation and stakeholder reporting for a course-provided mock learning platform.
+JavaScript Playwright UI automation, SQL/SQLite profile-persistence validation and nightly test-log analysis for a simulated learning platform.
+
+## Portfolio highlights
+
+- **UI automation:** 1 verified account-update test covering login, edit and save confirmation.
+- **Database testing:** SQL confirms the saved profile region after the UI test.
+- **Test reporting:** a supplied 14-result nightly fixture is analyzed separately from the live test.
+- **Review first:** [test code](tests/account_update.spec.js), [SQL verification](evidence/windows-rerun/results.json), [reviewed EOD report](reports/reviewed-eod-report.md).
 
 ## Context
 
@@ -57,3 +64,7 @@ The supplied nightly fixture supports holding the simulated build while checkout
 ## Original versus reviewed output
 
 The original EOD report is retained under reports/original. It describes seven timeout occurrences because its generator counted a summary mention as an event. Use the reviewed report for corrected interpretation. The user-data export omits password hashes, and raw databases are excluded. See review notes for all curation changes.
+
+## Related QA portfolio work
+
+[GreenLeaf E2E checkout capstone](https://github.com/Gultekinn/greenleaf-qa-capstone) | [Manual QA practice labs](https://github.com/Gultekinn/qa-practice-labs)
