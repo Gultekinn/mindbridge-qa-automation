@@ -1,0 +1,12 @@
+{
+  "summary_total": 14,
+  "summary_passed": 5,
+  "summary_failed": 9,
+  "summary_pass_rate": 35.7,
+  "explicit_timeout_error_lines": 6,
+  "timeout_word_mentions": 7,
+  "listed_ok_results": 5,
+  "listed_failed_results": 9,
+  "date_in_dataset": "2026-04-17",
+  "note": "The 14-result summary agrees with the 5 success and 9 failed entries. There are six explicit TimeoutError lines; the seventh textual mention appears in the summary. Retries are included in result entries, so this is not evidence of 14 distinct independently authored tests."
+}

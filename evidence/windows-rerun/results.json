@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-21",
+  "test_source": "automation_project/tests/account_update.spec.js (unchanged)",
+  "test_exit_code": 0,
+  "tests_passed": 1,
+  "runtime": "Windows; Node 24.15.0; installed Google Chrome; better-sqlite3 12.11.1 instead of lab 11.10.0",
+  "playwright_version": "1.64.1",
+  "initial_profile_region": "EMEA (prepared by course user setup script)",
+  "after_test_profile": {
+    "id": "101",
+    "email": "qa.user@mindbridge.local",
+    "name": "Jordan Lee",
+    "region": "APAC",
+    "updated_at": "2026-10-21T17:29:56.280Z"
+  },
+  "scope": "Account update live rerun only. The 14-result nightly fixture is separate supplied data, not this run."
+}

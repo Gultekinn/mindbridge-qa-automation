@@ -1,0 +1,35 @@
+2026-04-17T22:00:01.102Z ##[group]Run nightly regression suite
+2026-04-17T22:00:01.118Z [INFO] MindBridge automation pipeline (run_id: gh-88421, branch: main)
+2026-04-17T22:00:02.004Z [INFO] Playwright 1.42.0 | workers: 4 | shard 1/1
+2026-04-17T22:00:05.331Z   ok  1 [chromium] tests/login_smoke.spec.js:4:1 > login page loads (412ms)
+2026-04-17T22:00:08.902Z   ok  2 [chromium] tests/catalogue_filter.spec.js:9:1 > filter by subject (891ms)
+2026-04-17T22:00:12.447Z   ok  3 [chromium] tests/account_read.spec.js:6:1 > account form renders for signed-in user (1.1s)
+2026-04-17T22:00:45.019Z   x   4 [chromium] tests/checkout_payment.spec.js:18:1 > completes card checkout (30.0s)
+2026-04-17T22:00:45.021Z ##[error]TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.
+2026-04-17T22:00:45.022Z ##[error]  waiting for locator('[data-testid="checkout-submit-btn"]') to be enabled
+2026-04-17T22:01:18.044Z   x   5 [chromium] tests/checkout_payment.spec.js:18:1 > completes card checkout (retry #1) (30.0s)
+2026-04-17T22:01:18.046Z ##[error]TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.
+2026-04-17T22:01:51.068Z   x   6 [chromium] tests/checkout_payment.spec.js:18:1 > completes card checkout (retry #2) (30.0s)
+2026-04-17T22:01:51.070Z ##[error]TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.
+2026-04-17T22:02:01.112Z   x   7 [chromium] tests/enrollment_dob.spec.js:11:1 > rejects invalid date format (1.4s)
+2026-04-17T22:02:01.114Z ##[error]AssertionError: expected 'Enrollment failed' to contain 'Invalid date'
+2026-04-17T22:02:34.136Z   x   8 [chromium] tests/checkout_payment.spec.js:18:1 > completes card checkout (retry #3) (30.0s)
+2026-04-17T22:02:34.138Z ##[error]TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.
+2026-04-17T22:02:44.201Z   x   9 [chromium] tests/practice_session.spec.js:7:1 > sends a practice message (892ms)
+2026-04-17T22:02:44.203Z ##[error]AssertionError: expected 500 to be 200 // response status
+2026-04-17T22:03:17.225Z   x  10 [chromium] tests/checkout_payment.spec.js:18:1 > completes card checkout (retry #4) (30.0s)
+2026-04-17T22:03:17.227Z ##[error]TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.
+2026-04-17T22:03:27.301Z   ok 11 [chromium] tests/dashboard_share.spec.js:5:1 > share note persists (743ms)
+2026-04-17T22:04:00.323Z   x  12 [chromium] tests/checkout_payment.spec.js:18:1 > completes card checkout (retry #5) (30.0s)
+2026-04-17T22:04:00.325Z ##[error]TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.
+2026-04-17T22:04:10.401Z   x  13 [chromium] tests/cart_quantity.spec.js:8:1 > updates line quantity (654ms)
+2026-04-17T22:04:10.403Z ##[error]NetworkError: Failed to fetch /api/cart/lines
+2026-04-17T22:04:53.512Z   ok 14 [chromium] tests/admin_users.spec.js:4:1 > admin user list loads (521ms)
+2026-04-17T22:04:53.600Z ##[group]Run summary
+2026-04-17T22:04:53.601Z Tests: 14 total, 5 passed, 9 failed
+2026-04-17T22:04:53.602Z Pass rate: 35.7%
+2026-04-17T22:04:53.603Z Top failing spec: tests/checkout_payment.spec.js (7 TimeoutError)
+2026-04-17T22:04:53.604Z Artifacts uploaded: playwright-report.zip, trace-88421.tar.gz
+2026-04-17T22:04:53.605Z [INFO] Flaky-test quarantine list unchanged (0 specs)
+2026-04-17T22:04:53.606Z [INFO] Notifying #qa-nightly-alerts on failure
+2026-04-17T22:04:53.607Z ##[error]Process completed with exit code 1.

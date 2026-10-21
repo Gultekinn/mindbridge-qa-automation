@@ -1,0 +1,4 @@
+Act as a QA Lead writing an end-of-day status update for project managers and non-technical stakeholders. 
+Please review the nightly regression results and provide an end-of-day status update, highlighting the top failing hotspot and a clear recommendation or next step.
+
+--- LOG DATA ---

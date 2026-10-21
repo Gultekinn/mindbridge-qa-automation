@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:16976) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › tests\account_update.spec.js:3:1 › Account Update happy path (1.4s)
+
+  1 passed (4.6s)
